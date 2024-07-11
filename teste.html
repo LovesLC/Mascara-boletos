@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleto Fictício</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .boleto {
+            width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .boleto-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .boleto-header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .boleto-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .boleto-table th,
+        .boleto-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .boleto-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .barcode {
+        display: inline-block;
+        height: 40px;
+        width: 100%;
+        background: linear-gradient(to right, black 3px, white 1px);
+        background-size: 20px 100%;
+        }
+
+        .barcode .digit {
+        display: inline-block;
+        height: 100%;
+        width: 2px;
+        margin: 0 1px;
+        background-color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="boleto">
+            <div class="boleto-header">
+                <h1>Boleto Bancário</h1>
+            </div>
+            <table class="boleto-table">
+                <tr>
+                    <th>Beneficiário</th>
+                    <td>Luiz Sandro Teste</td>
+                </tr>
+                <tr>
+                    <th>CPF</th>
+                    <td>00111111234</td>
+                </tr>
+                <tr>
+                    <th>Data de Emissão</th>
+                    <td>23/05/2024</td>
+                </tr>
+                <tr>
+                    <th>Vencimento</th>
+                    <td>15/07/2024</td>
+                </tr>
+                <tr>
+                    <th>Valor</th>
+                    <td>260,50</td>
+                </tr>
+                <tr>
+                    <th>Código de Barras</th>
+                    <td>121354646831515668</td>
+                </tr>
+                <tr>
+                    <th>Número do Documento</th>
+                    <td>01575</td>
+                </tr>
+                <tr>
+                    <th>Espécie</th>
+                    <td>RC</td>
+                </tr>
+                <tr>
+                    <th>Aceite</th>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <th>Data de Processamento</th>
+                    <td>23/05/2024</td>
+                </tr>
+                <tr>
+                    <th>Número</th>
+                    <td>001234</td>
+                </tr>
+                <tr>
+                    <th>Referência</th>
+                    <td>Parcela 1/2 - Rua 0</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="boleto-footer">
+            <p>Este é um boleto fictício gerado para fins de demonstração.</p>
+        </div>
+    </footer>
+
+    <main>
+        <div class="boleto">
+            <div class="boleto-header">
+                <h1>Boleto Bancário</h1>
+            </div>
+            <table class="boleto-table">
+                <tr>
+                    <th>Beneficiário</th>
+                    <td>Luiz Sandro Teste</td>
+                </tr>
+                <tr>
+                    <th>CPF</th>
+                    <td>00111111234</td>
+                </tr>
+                <tr>
+                    <th>Data de Emissão</th>
+                    <td>23/05/2024</td>
+                </tr>
+                <tr>
+                    <th>Vencimento</th>
+                    <td>15/07/2024</td>
+                </tr>
+                <tr>
+                    <th>Valor</th>
+                    <td>260,50</td>
+                </tr>
+                <tr>
+                    <th>Código de Barras</th>
+                    <td>121354646831515668</td>
+                </tr>
+                <tr>
+                    <th>Número do Documento</th>
+                    <td>01575</td>
+                </tr>
+                <tr>
+                    <th>Espécie</th>
+                    <td>RC</td>
+                </tr>
+                <tr>
+                    <th>Aceite</th>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <th>Data de Processamento</th>
+                    <td>23/05/2024</td>
+                </tr>
+                <tr>
+                    <th>Número</th>
+                    <td>001234</td>
+                </tr>
+                <tr>
+                    <th>Referência</th>
+                    <td>Parcela 1/2 - Rua 0</td>
+                </tr>
+            </table>
+            <p>Código de Barras</p>
+            <div class="barcode">
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+                <div class="digit"></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

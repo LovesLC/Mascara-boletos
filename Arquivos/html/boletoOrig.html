@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .content-1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .doc {
+            border-collapse: collapse;
+            border: solid 2px #000;
+        }
+
+        .cabecalho,
+        .corpotd {
+            padding: 6px;
+            border-right: solid 2px #000;
+        }
+
+        .cabecalho {
+            font-weight: 500;
+        }
+
+        .corpotd {
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="conteudo-principal" style="width: 1000px;">
+        
+        <div class="header-logos" style="align-items: center; width: 100%; height: 80px; border-radius: 4px;">
+            <table class="head-box" style="width:100%;margin:0;display:inline-table;background: #9400D3; border-radius: 4px;"
+                cellpadding="0" ;="" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td style="width: 100%;">
+                            <p style="color: #fff; font-weight: 600; font-family: Arial, Helvetica, sans-serif;font-size: 20pt; padding-left: 15px; text-align:center">
+                                Boleto Gerado com Sucesso!</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="content-1" style="font-size: 12pt; font-weight: 600;">
+            <br>
+            <p style="font-size: 12px; text-align: end;">Cód. Barras {COD_BARRA}</p>
+            <table class="doc" style="font-size: 12px; text-align: center; width: 100%;">
+                <thead>
+                    <th class="cabecalho">Data do documento</th>
+                    <th class="cabecalho">N. Documento</th>
+                    <th class="cabecalho">Espécie</th>
+                    <th class="cabecalho">Aceite</th>
+                    <th class="cabecalho">Data Processamento</th>
+                    <th class="cabecalho">Nosso Número</th>
+                    <th class="cabecalho">Valor do Documento</th>
+                </thead>
+                <tbody>
+                    <td class="corpotd">{DATA}</td>
+                    <td class="corpotd">{NDOC}</td>
+                    <td class="corpotd">{ESP}</td>
+                    <td class="corpotd">{ACEITE}</td>
+                    <td class="corpotd">{DATAPROC}</td>
+                    <td class="corpotd">{NNUM}</td>
+                    <td class="corpotd">{NVALOR}</td>
+                </tbody>
+            </table>
+            <br>
+            <div>
+                <table style="width:100%;margin:0;display:inline-table;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div style="background-color: rgb(202, 202, 202);">
+                                    <div style="padding: 6px; font-family:Arial, Helvetica, sans-serif;">
+                                        <p style="font-size: 14px;">Este recibo somente terá validade com  a autenticação mecânica ou
+                                            acompanhado do recibo de pagamento emitido pelo Banco. Recebimento
+                                            através do cheque n.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do banco. Esta quitação só terá validade
+                                            após o pagamento do cheque pelo banco pagador.</p>
+                                        <p style="font-size: 14px;">
+                                            {REF}
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div style="margin-left: 25px;">
+                                    <fieldset style="width: 400px; height: 60px;">
+                                        <legend style="font-weight: 500; text-align: center;">Autenticação Mecanica - <strong>Recibo Pagador</strong></legend>
+    
+                                    </fieldset>
+                                </div>
+    
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <hr size="1" style="border:1px dashed black; margin-bottom: 15px; width: 100%;">
+                        </tr>
+                    </tbody>
+                </table>
+               <br><br><br>
+        </div>
+    </div>
+
+</body>
+</html>
